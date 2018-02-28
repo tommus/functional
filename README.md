@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    compile "co.windly:functional:1.0.0"
+    compile "com.github.tommus:functional:1.0.0"
 }
 ```
 
