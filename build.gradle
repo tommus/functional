@@ -1,0 +1,29 @@
+buildscript {
+
+    ext.FUNCTIONAL_VERSION = "1.0.0"
+    ext.FUNCTIONAL_VERSION_CODE = 1
+
+    ext.COMPILE_SDK_VERSION = 27
+    ext.MIN_SDK_VERSION = 15
+    ext.TARGET_SDK_VERSION = 27
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:3.0.1"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
